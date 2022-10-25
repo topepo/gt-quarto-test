@@ -1,0 +1,23 @@
+# Table width test
+
+```{r}
+#| label: tbl-test-width
+#| tbl-cap: "Does gt use table.width?"
+library(gt)
+mtcars %>% 
+  dplyr::slice(1:5) %>% 
+  dplyr::select(1:5) %>% 
+  gt() %>% 
+  tab_options(table.width = px(40))
+```
+
+```{r}
+#| label: tbl-test-width2
+#| tbl-cap: "Using pct instead"
+library(gt)
+mtcars %>% 
+  dplyr::slice(1:5) %>% 
+  dplyr::select(1:5) %>% 
+  gt() %>% 
+  tab_options(table.width = pct(80))
+```

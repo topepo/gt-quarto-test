@@ -1,0 +1,13 @@
+# Spanner background color
+
+
+```{r}
+#| label: tbl-test-spanner-color
+#| tbl-cap: "Color of column spanner doesn't follow the others"
+library(gt)
+mtcars %>% 
+  dplyr::slice(1:5) %>% 
+  dplyr::select(1:5) %>% 
+  gt() %>% 
+  tab_spanner(label = "Some Columns", columns = c(-mpg)) 
+```

@@ -1,0 +1,7 @@
+# Preface {.unnumbered}
+
+```{r}
+library(gt)
+sessionInfo()
+system("quarto --version", intern = TRUE)
+```

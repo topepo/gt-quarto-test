@@ -1,0 +1,16 @@
+project:
+  type: book
+
+book:
+  title: "gt-quarto-test"
+  author: "Jane Doe"
+  date: "10/25/2022"
+  chapters:
+    - index.qmd
+    - width.qmd
+    - colors.qmd
+
+format:
+  html:
+    theme: [cosmo, test.scss]
+
